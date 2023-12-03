@@ -1,0 +1,280 @@
+/* @import url("https://fonts.googleapis.com/css?family=Poppins|Monoton|Montserrat&display=swap"); */
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --heading-font: "Monoton", cursive;
+  --main-color: #c59d5f;
+  --form-color-1: #252525;
+  --form-color-2: #1f1f1f;
+  --grey-color: #999;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../images/LoginPage(Re).jpg") no-repeat center;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+}
+
+/* ----- Outer Box ----- */
+.container .outer-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  top: 50%;
+  left: 50%;
+  width: 800px;
+  height: 550px;
+
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  /* box-shadow: 0px 0px 50px 5px rgba(37, 37, 37, 0.7); */
+  transition: all 1s ease-in-out;
+  animation: login-box-load 1s ease-in-out;
+}
+
+.container .outer-box .heading {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.outer-box .heading .h2-heading {
+  font-size: 5.4rem;
+  font-weight: 100;
+  font-family: var(--heading-font);
+  color: var(--main-color);
+
+  line-height: 0.6;
+  letter-spacing: 1px;
+
+  margin: 0;
+  padding-bottom: 14px;
+  opacity: 0;
+  animation: fadeUp 0.5s forwards;
+  animation-delay: 1.5s;
+}
+
+.h2-heading .first-letter {
+  font-size: 6.4rem;
+  text-transform: uppercase;
+}
+
+.outer-box .heading .h1-heading {
+  font-size: 3.4rem;
+  font-weight: 550;
+  font-family: var(--heading-font);
+  color: white;
+
+  letter-spacing: 1px;
+  line-height: 3.3rem;
+  text-transform: uppercase;
+
+  margin-top: 0.7rem;
+  opacity: 0;
+  animation: scale 0.5s forwards;
+  animation-delay: 1s;
+}
+
+/* ----- Inner Box ----- */
+.outer-box .inner-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #252525;
+
+  width: 400px;
+  height: 100%;
+  border-radius: 10px;
+  /* box-shadow: -15px 0px 20px 1px rgba(37, 37, 37, 0.6); */
+
+  margin-left: auto;
+}
+
+/* ----- Form ----- */
+.inner-box .form-content {
+  display: block;
+  background-color: var(--form-color-1);
+
+  font-family: "Cabin", sans-serif;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 40px 0;
+  height: 100%;
+  border-radius: 10px;
+  width: 400px;
+}
+
+.form-content header {
+  text-align: center;
+}
+
+.form-content header h1 {
+  color: #fff;
+  font-size: 2.8rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* ----- Form Fields ----- */
+.inner-box .login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 0 20px;
+}
+
+.login-form .input-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 310px;
+
+  margin-top: 15px;
+}
+
+.login-form .input-group label {
+  color: var(--grey-color);
+  font-size: 15px;
+
+  margin-left: 16px;
+  margin-bottom: 5px;
+}
+
+.login-form .input-group input {
+  font-size: 13px;
+  color: white;
+
+  background-color: var(--form-color-2);
+  border-radius: 7px;
+  border: 1px solid var(--form-color-2);
+
+  padding: 15px;
+}
+
+.login-form .input-group input:focus {
+  color: white;
+  outline: 0;
+}
+
+/* ----- Button ----- */
+.input-group button {
+  font-size: 0.9rem;
+  color: white;
+  background-color: var(--main-color);
+  width: 150px;
+
+  align-self: center;
+  border: unset;
+  text-transform: uppercase;
+  border-radius: 7px;
+
+  margin-top: 15px;
+  margin-bottom: 10px;
+  padding: 15px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.input-group button:hover {
+  outline: none;
+  background-color: #fff;
+  color: #111;
+}
+
+/* ----- Form Footer Message ----- */
+.form-content footer {
+  text-align: center;
+  padding-top: 15px;
+}
+
+.form-content footer a,
+.form-content footer p {
+  color: var(--grey-color);
+  font-size: 14px;
+
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.form-content footer a:hover {
+  color: var(--main-color);
+}
+
+/* ----- Register Page Fixes ----- */
+#register-content {
+  padding: 20px 0;
+}
+
+#register-content header h1 {
+  font-size: 2.4rem;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+#register-content footer {
+  padding-top: 0px;
+}
+
+#register-content footer p {
+  margin: 5px 0;
+}
+
+.input-row {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  max-width: 310px;
+}
+
+.input-row .input-group {
+  max-width: 150px;
+  margin-right: 10px;
+}
+
+/* ----- Animations ---- */
+@keyframes login-box-load {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeUp {
+  0% {
+    transform: translateY(4rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(3);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

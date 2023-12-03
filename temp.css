@@ -1,0 +1,192 @@
+.modal.modal-left .modal-dialog,
+.modal.modal-right .modal-dialog {
+  max-width: 500px;
+  min-height: calc(100vh - 0px);
+}
+.modal.modal-left.show .modal-dialog,
+.modal.modal-right.show .modal-dialog {
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+.modal.modal-left .modal-content,
+.modal.modal-right .modal-content {
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: calc(100vh - 0px);
+  border-radius: 0;
+}
+.modal.modal-left .modal-dialog {
+  margin: 0px auto 0 0;
+  -webkit-transform: translate(-100%, 0);
+  transform: translate(-100%, 0);
+}
+.modal.modal-right {
+  padding-right: 0 !important;
+}
+.modal.modal-right .modal-dialog {
+  margin: 0px 0 0 auto;
+  -webkit-transform: translate(100%, 0);
+  transform: translate(100%, 0);
+}
+.sidebar-cart-content {
+  max-height: calc(var(--vh, 1vh) * 100);
+  padding-bottom: 200px;
+}
+.sidebar-cart-body {
+  padding-right: 3rem;
+  padding-left: 3rem;
+}
+.sidebar-cart-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 200px;
+  padding-right: 3rem;
+  padding-left: 3rem;
+  border: none;
+  z-index: 10005;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-line-pack: center;
+  align-content: center;
+}
+.sidebar-cart-product-wrapper {
+  overflow-y: auto;
+  max-height: calc(100vh - 312px);
+  max-height: calc(calc(var(--vh, 1vh) * 100) - 312px);
+  margin-right: -3rem;
+  padding-right: 2.6rem;
+}
+.svg-icon.sidebar-cart-icon {
+  width: 24px;
+  height: 24px;
+}
+.navbar-cart-product {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #e9ecef;
+}
+.navbar-cart-product:first-of-type {
+  padding-top: 0;
+}
+.navbar-cart-product:last-of-type {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+.navbar-cart-product .navbar-cart-product-image {
+  max-width: 80px;
+}
+.navbar-cart-product .navbar-cart-product-link {
+  font-weight: bold;
+}
+.navbar-cart-total {
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding: 0.7rem 1rem;
+  border-top: 1px solid #e9ecef;
+  border-bottom: 1px solid #e9ecef;
+  font-size: 0.875rem;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.sidebar-block {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #e9ecef;
+}
+.sidebar-block:last-of-type {
+  border-bottom: none;
+}
+.sidebar-block:first-of-type {
+  padding-top: 0;
+}
+.sidebar-heading {
+  margin-bottom: 1.2rem;
+  color: #212529;
+}
+.sidebar-badge {
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+  padding: 0 0.8rem;
+  color: #343a40;
+  border-radius: 4rem;
+  background: #e9ecef;
+  font-size: 0.7em;
+}
+.nouislider-values {
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1rem;
+  color: #868e96;
+  font-size: 0.875rem;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.sidebar-icon-menu {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 0;
+  padding-left: 0;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  list-style: none;
+}
+a.sidebar-icon-menu-link {
+  text-decoration: none;
+  color: #212529;
+  font-size: 0.875rem;
+}
+.sidebar-icon-menu-item {
+  position: relative;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  cursor: pointer;
+  border-bottom: 1px solid #e9ecef;
+}
+.sidebar-icon-menu-item:last-of-type {
+  border-bottom: none;
+}
+.sidebar-icon-menu-item[data-toggle="collapse"]::before {
+  display: inline-block;
+  position: absolute;
+  top: 2.2rem;
+  right: 0;
+  content: "\f105";
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-family: "Font Awesome\ 5 Free";
+  font-weight: 900;
+}
+.sidebar-icon-menu-item[aria-expanded="true"]::before {
+  content: "\f107";
+}
+.sidebar-icon {
+  width: 2rem !important;
+  height: 2rem !important;
+  margin-right: 1rem;
+}
+.sidebar-icon-menu-count {
+  margin-top: -1px;
+  color: #868e96;
+  font-size: 0.875rem;
+}
+.sidebar-icon-submenu {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 3rem;
+  font-size: 0.875rem;
+}
+.sidebar-icon-submenu-item {
+  margin-bottom: 0.5rem;
+}
+.sidebar-icon-submenu-item:last-of-type {
+  margin-bottom: 0;
+}
+.sidebar-icon-submenu-link {
+  color: #868e96;
+}
